@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Student Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎓 Smart Student Management System</h1>
+
+        <p>Manage student records easily</p>
+
+
+        <!-- ADD STUDENT -->
+
+        <div class="form-box">
+
+            <h2>Add Student</h2>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Student Name"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email"
+            >
+
+            <input
+                type="text"
+                id="course"
+                placeholder="Course"
+            >
+
+            <button onclick="addStudent()">
+                Add Student
+            </button>
+
+        </div>
+
+
+        <!-- DASHBOARD -->
+
+        <div class="dashboard">
+
+            <div class="dashboard-card">
+                <h3>Total Students</h3>
+                <p id="totalStudents">0</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Course</h3>
+                <p>Agentic AI</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>System Status</h3>
+                <p>Active</p>
+            </div>
+
+        </div>
+
+
+        <!-- STUDENTS -->
+
+        <div class="student-box">
+
+            <h2>Students</h2>
+
+
+            <!-- SEARCH -->
+
+            <input
+                type="text"
+                id="search"
+                placeholder="🔍 Search student..."
+            >
+
+            <button onclick="searchStudent()">
+                Search
+            </button>
+
+            <button onclick="getStudents()">
+                View Students
+            </button>
+
+
+            <div id="studentList"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
